@@ -1,0 +1,13 @@
+<div>
+    <div>
+      <strong><a href="{{ vm.url }}">{{ vm.title }}</a></strong> {{ vm.domain }}
+    </div>
+    <div ng-show="!vm.viewMode">
+       Score: {{ vm.score }} by {{ vm.author }} {{ vm.time }} | <a href="" class="hide">Hide</a> | 
+       <a href="" ng-click="navToComments(vm.id)"><ng-pluralize count="vm.numComments" when="{ '0': 'discuss', '1': '1 comment', 'other': '{} comments'}"></ng-pluralize></a>
+    </div>
+    <div ng-show="vm.viewMode">
+            Score: {{ vm.score }} by {{ vm.author }} {{ vm.time }} | 
+            <ng-pluralize count="vm.numComments" when="{ '0': 'discuss', '1': '1 comment', 'other': '{} comments'}"></ng-pluralize>
+    </div>
+  </div>

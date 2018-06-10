@@ -1,0 +1,21 @@
+.w-5 { width: 5%; }
+.w-90 { width: 90%; }
+.w-95 { width: 95%; }
+
+@media screen and (min-width: 30em) {
+	.w-5-ns  { width: 5%; }
+	.w-90-ns  { width: 90%; }
+	.w-95-ns  { width: 95%; }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .w-5-m  { width: 5%; }
+	.w-90-m  { width: 90%; }
+	.w-95-m  { width: 95%; }
+}
+
+@media screen and (min-width: 60em) {
+  .w-5-l  { width: 5%; }
+	.w-90-l  { width: 90%; }
+	.w-95-l  { width: 95%; }
+}

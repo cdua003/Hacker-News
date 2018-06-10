@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/tachyons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/tachyons-extras.css" />
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+</head>
+<body ng-controller="AppCtrl">
+    <div>
+        <div data-ng-include=" 'views/header.html' " class="app-header navbar"></div>
+        <div ui-view></div>
+    </div>
+        
+
+    <script src="js/angular.js"></script>   
+    <script src="js/angular-ui-router.js"></script>
+    <script src="js/angular-sanitize.js"></script>
+    <script src="node_modules/angular-utils-pagination/dirPagination.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app/services/storiesService.js"></script>
+    <script src="js/app/controllers/Main.js"></script>
+    <script src="js/app/controllers/AllStoriesController.js"></script>
+    <script src="js/app/controllers/TopStoriesController.js"></script>
+    <script src="js/app/controllers/BestStoriesController.js"></script>
+    <script src="js/app/controllers/StoryController.js"></script>
+    <script src="js/app/directives/Story.js"></script>
+    <script src="js/app/components/StoryComment.js"></script>
+    <script src="js/app/filters/getTimes.js"></script>
+    <script src="js/app/filters/getDomainFromUrl.js"></script>
+</body>
+</html>

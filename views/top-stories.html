@@ -1,0 +1,15 @@
+<div class="apps-page-main">
+    <h2>Top stories</h1>
+        <ol class="list p10" start="{{ vm.start }}">
+            <li class="cf" dir-paginate="story in vm.stories | itemsPerPage: 30" current-page="currentPage">
+                <div class="fl w-10 mw2 tr pr1">
+                    {{vm.stories.indexOf(story) + 1}}. 
+                </div>
+                <div class="fl w-90">
+                    <story id="story"></story>
+                </div>
+            </li>
+        </ol>
+    <dir-pagination-controls on-page-change="updatePage(newPageNumber, oldPageNumber)" class="horizontal-ul"></dir-pagination-controls>
+</div>
+

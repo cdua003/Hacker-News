@@ -1,0 +1,12 @@
+<div class="apps-page-main">
+    <h2><a href="" ng-click="navBackTo()">Back</a></h2>
+    <story id="vm.id" view='true'></story>
+    <h3 >Comments</h3>
+</div>
+<ul class="list mt0 apps-page-main">
+    <li class="pt2" ng-repeat="commentId in vm.comments">
+        <story-comment id="commentId"></story-comment>
+    </li>
+</ul>   
+
+
